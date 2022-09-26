@@ -69,7 +69,7 @@ public static void main(String args[]){
 System.out.println("Enter A year=");
 Scanner sc=new Scanner(System.in);
 int no=sc.nextInt();
-if(no%4==0 && no%100!=0 || no%400==0){
+if(no%4==0 && no%100!=0 || no%400==0){  //because 1900 is divisable by 4 but not an leap year
 System.out.println("Leap yaer");
 
 }
