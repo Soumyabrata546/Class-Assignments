@@ -1,5 +1,5 @@
 import java.util.*;
-//Multiplication of two float numbers
+//Multiplication of two floating numbers
 class a{
 public static void main(String args[]){
 System.out.print("Multiplication Result="+2.50f*5.50f);
