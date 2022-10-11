@@ -7,7 +7,7 @@ For example, SBI, ICICI and AXIS banks could
 provide 8%, 7%, and 9% rate of interest.
  */
 class Bank{
-	int  getRate(String s) {
+	int  getRate(String s) {// a method which will return the rate of interest
 		if(s=="sbi") {
 			return 8;
 		}
