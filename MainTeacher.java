@@ -14,44 +14,27 @@ do not need to write this code and can be used directly
 from base class.
  */
 class Teacher {
-String clg_name,designation;
+String clg_name="BBC",designation="HOD";
 void work() {
 	System.out.println(clg_name+" "+designation);
 }
 }
 class ItTeacher extends Teacher{
-	ItTeacher(String s,String n){
-		clg_name=s;
-		designation=n;
-	}
+	
 }
 class MathTeacher extends Teacher{
-	MathTeacher(String s,String n){
-		clg_name=s;
-		designation=n;
-	}
+	
 }
 class MusicTeacher extends Teacher{
-	MusicTeacher(String s,String n){
-		clg_name=s;
-		designation=n;
-	}
+	
 }
 class PhysicsTeacher extends Teacher{
-	PhysicsTeacher(String s,String n){
-		clg_name=s;
-		designation=n;
-	}
+	
 }
 public class MainTeacher {
 	public static void main(String[] args) {
-		ItTeacher it=new ItTeacher("BBC", "Techer");
+		ItTeacher it=new ItTeacher();
 		it.work();
-		MathTeacher m=new MathTeacher("BB", "Math-Techer");
-		m.work();
-		MusicTeacher mt=new MusicTeacher("BBC", "Music-Techer");
-		mt.work();
-		PhysicsTeacher p=new PhysicsTeacher("BBC", "Physics-Techer");
-		p.work();
+		
 	}
 }
