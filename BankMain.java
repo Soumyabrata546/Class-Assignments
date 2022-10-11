@@ -7,25 +7,35 @@ For example, SBI, ICICI and AXIS banks could
 provide 8%, 7%, and 9% rate of interest.
  */
 class Bank{
-	int  getRate(String s) {// a method which will return the rate of interest
-		if(s=="sbi") {
-			return 8;
-		}
-		else if(s=="icici")
-			return 7;
-		else if(s=="axis")
-			return 9;
-		else
-			return 0;
+	int  getRate() {
+		return 0;
+	}
+}
+class Sbi extends Bank{
+	int  getRate() {
+		return 8;
+	}
+}
+class Icici extends Bank{
+	int  getRate() {
+		return 7;
+	}
+}
+class Axis extends Bank{
+	int  getRate() {
+		return 9;
 	}
 }
 public class BankMain {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Bank b=new Bank();
-		int rate=b.getRate("icici");
-		System.out.println("Rate of interest= "+rate+"%");
+		Sbi s=new Sbi();
+		Icici i=new Icici();
+		Axis a=new Axis();
+		System.out.println("Sbi Rate of interest="+s.getRate());
+		System.out.println("Icici Rate of interest="+i.getRate());
+		System.out.println("Axis Rate of interest="+a.getRate());
 	}
 
 }
