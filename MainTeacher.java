@@ -25,9 +25,33 @@ class ItTeacher extends Teacher{
 		designation=n;
 	}
 }
+class MathTeacher extends Teacher{
+	MathTeacher(String s,String n){
+		clg_name=s;
+		designation=n;
+	}
+}
+class MusicTeacher extends Teacher{
+	MusicTeacher(String s,String n){
+		clg_name=s;
+		designation=n;
+	}
+}
+class PhysicsTeacher extends Teacher{
+	PhysicsTeacher(String s,String n){
+		clg_name=s;
+		designation=n;
+	}
+}
 public class MainTeacher {
 	public static void main(String[] args) {
 		ItTeacher it=new ItTeacher("BBC", "Techer");
 		it.work();
+		MathTeacher m=new MathTeacher("BB", "Math-Techer");
+		m.work();
+		MusicTeacher mt=new MusicTeacher("BBC", "Music-Techer");
+		mt.work();
+		PhysicsTeacher p=new PhysicsTeacher("BBC", "Physics-Techer");
+		p.work();
 	}
 }
