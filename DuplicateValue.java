@@ -1,5 +1,7 @@
 package PallabiMaam;
-
+/*Write a Java program to find the duplicate values 
+      of an array of integer values.
+      */
 public class DuplicateValue {
 	public static void main(String[] args) {
 	int []arr= {2,3,4,7,5,4,3,5};
