@@ -1,5 +1,8 @@
 package PallabiMaam;
-
+/*
+ we need to print the elements of the array which 
+      are present in odd positions.
+      */
 public class OddPostionArray {
 public static void main(String[] args) {
 	int []arr= {2,3,4,7,5,4,3,5};
